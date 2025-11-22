@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Hỗ trợ tâm lý học đường – ULIS Link</title>
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #004E92, #000428);
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="text-white">
+
+  <div class="max-w-6xl mx-auto p-6">
+
+    <!-- Header -->
+    <header class="flex items-center gap-6 mb-12 bg-white/5 backdrop-blur-md p-5 rounded-2xl shadow-xl">
+      <img src="ulis.png" class="w-24 h-24 object-cover rounded-xl shadow-lg bg-white" />
+
+      <div>
+        <h1 class="text-3xl font-semibold tracking-wide">Hỗ trợ tâm lý học đường – ULIS Link</h1>
+        <p class="text-blue-200 mt-1">
+          Không gian an toàn để chia sẻ cảm xúc và nhận hỗ trợ đúng cách.
+        </p>
+      </div>
+
+      <div class="ml-auto">
+        <button class="bg-blue-500 hover:bg-blue-600 px-6 py-2.5 rounded-xl shadow-lg transition">
+          Mở Chat hỗ trợ
+        </button>
+      </div>
+    </header>
+
+    <!-- Body -->
+    <main class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+      <!-- Left Section -->
+      <section class="md:col-span-2 space-y-8">
+
+        <!-- Search Box -->
+        <div class="flex gap-3">
+          <input
+            class="flex-1 px-5 py-3 rounded-2xl bg-white/15 text-white placeholder-blue-200
+                   border border-white/20 focus:outline-none focus:ring-2 focus:ring-blue-300/40 
+                   backdrop-blur-xl shadow-lg"
+            placeholder="🔍  Tìm kiếm bài viết, thảo luận..."
+          />
+          <button class="px-4 py-2 rounded-2xl bg-white/20 text-white hover:bg-white/30 backdrop-blur-lg shadow-lg transition">
+            Tìm kiếm
+          </button>
+        </div>
+
+        <!-- Post Cards -->
+        <div class="space-y-6">
+
+          <article class="p-6 bg-white rounded-3xl shadow-xl border border-gray-100 
+                          transform transition duration-300 hover:scale-105 hover:shadow-2xl hover:border-blue-400 cursor-pointer">
+            <h2 class="text-xl font-semibold text-gray-900">Làm sao vượt qua áp lực thi cử?</h2>
+            <p class="text-gray-600 mt-1">Một số kỹ thuật thở và thư giãn giúp giảm căng thẳng…</p>
+          </article>
+
+          <article class="p-6 bg-white rounded-3xl shadow-xl border border-gray-100 
+                          transform transition duration-300 hover:scale-105 hover:shadow-2xl hover:border-blue-400 cursor-pointer">
+            <h2 class="text-xl font-semibold text-gray-900">Cách quản lý thời gian cho tân sinh viên</h2>
+            <p class="text-gray-600 mt-1">Lập kế hoạch theo tuần giúp giảm stress và tăng hiệu suất…</p>
+          </article>
+
+          <article class="p-6 bg-white rounded-3xl shadow-xl border border-gray-100 
+                          transform transition duration-300 hover:scale-105 hover:shadow-2xl hover:border-blue-400 cursor-pointer">
+            <h2 class="text-xl font-semibold text-gray-900">Tips giữ sức khỏe tinh thần</h2>
+            <p class="text-gray-600 mt-1">Ngủ đủ giấc và hạn chế caffeine là chìa khóa cân bằng tinh thần…</p>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Right Section -->
+      <section class="space-y-4 bg-white/10 backdrop-blur-xl p-6 rounded-3xl shadow-2xl border border-white/20">
+        <h3 class="text-xl font-semibold text-blue-100 mb-3">📌 Bài đăng gần đây</h3>
+
+        <ul class="space-y-3 text-blue-200 text-base">
+          <li class="hover:text-white hover:scale-105 transition transform cursor-pointer">• Làm sao vượt qua áp lực thi cử?</li>
+          <li class="hover:text-white hover:scale-105 transition transform cursor-pointer">• Cách quản lý thời gian cho tân sinh viên</li>
+          <li class="hover:text-white hover:scale-105 transition transform cursor-pointer">• Tips giữ sức khỏe tinh thần</li>
+        </ul>
+      </section>
+
+    </main>
+
+  </div>
+
+</body>
+</html>
