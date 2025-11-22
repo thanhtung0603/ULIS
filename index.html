@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ULIS Link – Kết nối học tập</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+/* Cài đặt font Inter cho toàn bộ trang */
+body {
+  font-family: 'Inter', sans-serif;
+}
+/* Custom scrollbar style cho phần Share box */
+textarea {
+  scrollbar-width: thin;
+  scrollbar-color: #3b82f6 #1e3a8a; /* thumb and track */
+}
+textarea::-webkit-scrollbar {
+  width: 8px;
+}
+textarea::-webkit-scrollbar-thumb {
+  background-color: #3b82f6;
+  border-radius: 4px;
+}
+textarea::-webkit-scrollbar-track {
+  background-color: #1e3a8a;
+}
+</style>
+</head>
+
+<body class="bg-gradient-to-br from-[#004E92] to-[#000428] min-h-screen text-white p-6">
+
+<header class="max-w-4xl mx-auto flex justify-between items-center bg-white/5 backdrop-blur-md p-4 px-6 rounded-2xl shadow-xl border border-white/10 mb-8">
+    
+        <div class="flex items-center space-x-4">
+        <img src="ulis.png" alt="ULIS Link Logo" class="w-24 h-24 object-cover rounded-xl shadow-lg bg-white" />
+        <div>
+                        <h1 class="text-3xl font-semibold tracking-wide">Kết Nối Học Tập – ULIS Link</h1>
+                        <p class="text-green-200 mt-1">
+              Cập nhật và trao đổi tài liệu các môn học.
+            </p>
+        </div>
+    </div>
+    
+        <button onclick="openChat()" 
+        class="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-xl text-white font-medium transition duration-300 shadow-md">
+        Mở Chat Hỗ Trợ
+    </button>
+</header>
+
+<div class="max-w-4xl mx-auto space-y-8">
+
+        <div class="bg-white/10 p-6 rounded-3xl backdrop-blur-sm shadow-2xl border border-white/20">
+        <h2 class="text-2xl font-semibold mb-4 text-blue-200 flex items-center">
+            <span class="mr-2 text-yellow-300">⭐</span> Tài liệu và Trao đổi
+        </h2>
+        <div class="flex space-x-3">
+            <input
+                class="flex-1 px-5 py-3 rounded-xl bg-white/20 text-white placeholder-blue-200 border border-white/30 
+                       focus:outline-none focus:ring-4 focus:ring-blue-400/50 shadow-inner text-lg transition duration-300"
+                placeholder="🔍 Tìm kiếm tài liệu, môn học, hashtag..."
+            />
+            <button class="px-5 py-3 rounded-xl bg-gradient-to-r from-blue-500 to-blue-600 text-white hover:from-blue-600 hover:to-blue-700 font-semibold transition duration-300 shadow-md">
+                Tìm kiếm
+            </button>
+        </div>
+    </div>
+    
+        <div class="bg-white/10 p-6 rounded-3xl backdrop-blur-sm shadow-2xl border border-white/20">
+        <h2 class="text-2xl font-semibold mb-4 text-blue-200 flex items-center">
+            <span class="mr-2 text-green-300">✍️</span> Chia sẻ kiến thức và tài liệu
+        </h2>
+        <textarea placeholder="Nhập tiêu đề, nội dung, cảm nhận hoặc link tài liệu của bạn..."
+                  class="w-full h-40 px-5 py-3 rounded-xl bg-white/20 text-white placeholder-blue-200 border border-white/30 
+                         focus:outline-none focus:ring-2 focus:ring-blue-400/50 shadow-inner transition duration-300 resize-none text-base"></textarea>
+
+        <button onclick="submitPost()" 
+                class="mt-4 w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 
+                       py-3 rounded-xl shadow-lg font-bold text-lg transition transform hover:-translate-y-0.5 hover:shadow-2xl">
+            Đăng Bài Ngay 🚀
+        </button>
+    </div>
+
+        <div class="pt-2">
+        <h2 class="text-2xl font-semibold text-blue-100 mb-5 flex items-center">
+            <span class="mr-2 text-red-300">🔥</span> Bài đăng gần đây
+        </h2>
+
+        <div class="space-y-4">
+            <div class="p-5 bg-white rounded-xl shadow-lg border border-gray-100 transform transition duration-300 hover:scale-[1.01] hover:shadow-2xl cursor-pointer">
+                <h3 class="font-bold text-xl text-gray-900 flex items-center">
+                    <span class="mr-2 text-blue-500">📚</span> [ENG101] Tài liệu ôn giữa kỳ
+                </h3>
+                <p class="text-gray-600 mt-2 pl-7 border-l-4 border-blue-400">Tài liệu gồm lý thuyết + bài tập mẫu chi tiết. Bạn nào cần có thể tải dưới đây.</p>
+                <div class="text-sm text-gray-400 mt-2 text-right">#ENG101 #ÔnThi #TàiLiệuHọcTập</div>
+            </div>
+
+            <div class="p-5 bg-white rounded-xl shadow-lg border border-gray-100 transform transition duration-300 hover:scale-[1.01] hover:shadow-2xl cursor-pointer">
+                <h3 class="font-bold text-xl text-gray-900 flex items-center">
+                    <span class="mr-2 text-red-500">🇯🇵</span> [JAP2] Bộ flashcard từ vựng
+                </h3>
+                <p class="text-gray-600 mt-2 pl-7 border-l-4 border-red-400">Mình chia sẻ bộ Quizlet tự làm, tổng hợp N5-N4, hỗ trợ học nhanh và hiệu quả hơn.</p>
+                <div class="text-sm text-gray-400 mt-2 text-right">#JAP2 #TừVựng #Quizlet</div>
+            </div>
